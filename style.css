@@ -1,0 +1,110 @@
+body{
+    font-family: "Orbitron";
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #0D0208;
+}
+
+h1{
+    color: #00FF41;
+    margin: 3vh;
+}
+
+#calculator{
+    background-color: #008F11;
+    padding: 1.5vh 1vh;
+    border: 1vh solid #003B00;
+    border-radius: 1vh;
+}
+
+#displays{
+    display: flex;
+    flex-direction: column;
+    gap: 0vh;
+}
+
+input{
+    border: none;
+    color: #00FF41;
+    background-color: #008F11;
+    font-family: "Orbitron";
+    text-align: right;
+    padding: 0.8vh 1.5vh;
+    width: 60vh;
+}
+
+input:focus{
+    visibility: hidden;
+}
+
+input:hover{
+    cursor: default;
+}
+
+#side-display{
+    font-size: 3.3vh;
+    -webkit-text-stroke: 0.02vh #003B00;
+}
+
+#display{
+    -webkit-text-stroke: 0.3vh #003B00;
+    font-weight: bold;
+    font-size: 5.3vh;
+    direction: rtl;
+}
+
+button{
+    width: 12vh;
+    margin: 0.3vh;
+    font-family: "Orbitron";
+    font-size: 4.25vh;
+    font-weight: 500;
+    background-color: #003B00;
+    color: #00FF41;
+    border: none;
+    border-radius: 1vh;
+}
+
+button:hover{
+    background-color: #005B00;
+    cursor: pointer;
+}
+
+button::selection{
+    background-color: #003B00;
+}
+
+#clears > button{
+    height: 24.5vh;
+}
+
+#main-pad > button, #operations > button{
+    height: 12vh;
+}
+
+#buttons{
+    display: flex;
+    display: row;
+    padding: 0.8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#clears{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-pad{
+    display: flex;
+    flex-direction: row;
+    width: 39vh;
+    flex-wrap: wrap;
+}
+
+#operations{
+    display: flex;
+    flex-direction: column;
+    margin-left: -1.1vh;
+}
